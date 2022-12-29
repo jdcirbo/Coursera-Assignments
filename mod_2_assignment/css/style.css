@@ -1,0 +1,131 @@
+/* Browser Reset */
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+}
+
+/***************/
+/* Base Styles */
+/***************/
+
+/* General Elements */
+
+body {
+    background-color: #800000;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: #ffff00;
+    font-size: 60px;
+    text-shadow: 0px 0px 5px #ffff00, 0px 0px 10px #ffffff;
+}
+
+strong {
+    color: #000050;
+}
+
+i {
+    color: #0020ff;
+}
+
+p {
+    margin: 20px;
+}
+
+/* Classes */
+
+.container {
+    margin: 1%;
+}
+
+.col {
+    margin: 2%;
+    position: relative;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    background-color: #808080;
+}
+
+.label {
+    font-size: 24px;
+    text-align: center;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    position: relative;
+    width: 150px;
+    top: -2px;
+    left: calc(100% - 149px);
+}
+
+/* IDs */
+
+#chicken {
+    background-color: #ff8080;
+}
+
+#beef {
+    background-color: #ff0000;
+}
+
+#sushi {
+    background-color: #ffff00;
+}
+
+
+/************************/
+/* Responsive Structure */
+/************************/
+
+/* Mobile */
+
+@media (max-width: 767px) {
+    h1 {
+        margin: 25px;
+    }
+
+    .col {
+        width: 96%;
+        height: 200px;
+    }
+}
+
+/* Tablet */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    h1 {
+        margin: 50px;
+    }
+
+    .col {
+        height: 200px;
+    }
+
+    #col-1, #col-2 {
+        width: 46%;
+        float: left;
+    }
+    #col-3 {
+        clear: both;
+        width: 96%;
+    }
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+    h1 {
+        margin: 100px;
+    }
+
+    .col {
+        position: relative;
+        float: left;
+        height: 250px;
+        width: 29.33%;
+    }
+}
