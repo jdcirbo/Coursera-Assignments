@@ -7,20 +7,22 @@
     border: 0px;
 }
 
+/* General Elements */
+
 body {
     background-color: #000000;
     color: #ffffff;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 20px;
+    font-size: 40px;
     font-weight: bold;
 }
 
 h1 {
-    font-size: 32px;
-    font-weight: bolder;
+    font-size: 60px;
+    font-weight:  bolder;
     text-align: center;
     text-shadow: 0px 0px 10px #ffffff;
-    margin: 100px;
+    margin: 50px;
 }
 
 ul {
@@ -35,15 +37,40 @@ a {
     text-decoration: none;
     color: #ffffff;
     width: 150px;
+    text-shadow: 0px 0px 5px #ffffff;
 }
 
 a:hover {
-    color: #000000;
-    text-shadow: 0px 0px 20px #ffffff;
+    color: transparent;
+    text-shadow: 0px 0px 5px #000000, 0px 0px 30px #ffffff;
     cursor: default;
 }
 
 a:active {
     color: #ffffff;
-    text-shadow: 0px 0px 10px #ffffff, 0px 0px 20px #ffff00;
+    text-shadow: 0px 0px 10px #ffffff, 0px 0px 30px #ffff00;
+}
+
+/* Mobile */
+
+@media (max-width:470px) {
+    body {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+}
+
+/* Medium */
+
+@media (min-width:471px) and (max-width:767px) {
+    body {
+        font-size: 30px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
 }
