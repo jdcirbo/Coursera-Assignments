@@ -17,10 +17,15 @@ nav .container ul {
 .navbar-header .navbar-brand {
     font-size: 2em;
     color: #000;
+    margin: 10px;
 }
 
-.navbar-header button.navbar-toggle, .icon-bar {
+#drop, .icon-bar {
     border: 1px solid #000;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #000;
 }
 
 #cnav {
@@ -32,14 +37,20 @@ nav li {
     border: 1px solid #000;
 }
 
-.row {
-    margin: 0;
-}
-
-li a {
+.navbar-default .navbar-nav li a {
     width: 100%;
     text-align: center;
     font-size: 1.6em;
+    color: #000;
+}
+
+main h1 {
+    font-size: 2.75em;
+    margin-bottom: 50px;
+}
+
+.row {
+    margin: 0;
 }
 
 .inner {
